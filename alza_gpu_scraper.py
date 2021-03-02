@@ -16,7 +16,7 @@ driver = selenium.webdriver.Chrome(options=chrome_options)
 
 
 def send_email(gpu_link: str):
-    receiver = "mincoslav@gmail.com"
+    receiver = ""
     body = gpu_link
 
     yag = yagmail.SMTP()
