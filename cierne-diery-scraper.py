@@ -36,6 +36,7 @@ def main():
                 time.sleep(300)
             else:
                 timer = randrange(120, 300)
+                logging.info("Current time: {}".format(str(datetime.datetime.now())))
                 logging.info("sleeping for {}".format(str(timer)))
                 time.sleep(timer)
                 driver.refresh()
